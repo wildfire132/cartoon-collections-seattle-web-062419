@@ -4,7 +4,8 @@ end
 
 def summon_captain_planet(array)
   array.collect |counter|
-    counter.join
+    counter.join("! ")
+    counter.
 end
 
 def long_planeteer_calls# code an argument here
