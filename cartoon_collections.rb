@@ -12,7 +12,13 @@ def long_planeteer_calls(array)
   array.any? {|word| word.length >4}
 end
 
-def find_the_cheese# code an argument here
+def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find {|item| if cheese_type.include?(item) return true}
+  array.find do |item|
+   if cheese_types.include?("#{item}")
+    true
+  else
+    false 
+  end
+  end 
 end
